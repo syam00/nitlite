@@ -1,0 +1,19 @@
+{
+  "name": "nitlite-backend",
+  "version": "1.0.0",
+  "description": "the backend application to support nitlite project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "syam00",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.2",
+    "mosca": "^2.3.0",
+    "node-constants": "0.0.2",
+    "uuid": "^3.0.1"
+  }
+}
