@@ -1,5 +1,7 @@
 var express = require('express')
 var app = null;
+var light = require('../models/light');
+var constants = require('../utils/constants')
 
 
 function startREST(){
@@ -12,10 +14,18 @@ function startREST(){
     app.get('/light/all', function(req, res){
 
         try {
-            res.send('all lights')
+            light.find(function(error, lights){
+                console.log(lights);
+                if (error){
+                    res.send(constants.SERVER_MESSAGE.ERROR_RESPONSE_MESSAGE);
+                }
+                else {
+                    res.send(lights);
+                }
+            });
         }
         catch(error){
-
+            console.log('error while fetching lights', error);
         }
     });
 
@@ -34,7 +44,7 @@ function startREST(){
 
     });
 
-    
+
 }
 
 module.exports.startREST = startREST;

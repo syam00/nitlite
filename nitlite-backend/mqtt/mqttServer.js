@@ -1,11 +1,6 @@
 var mosca = require('mosca');
 var light = require('../models/light');
 var constants = require('../utils/constants')
-var mongoose = require('mongoose');
-
-mongoose.Promise = global.Promise;
-
-mongoose.connect('mongodb://localhost/nitlite');
 
 var pubsubsettings = {
   //using ascoltatori
