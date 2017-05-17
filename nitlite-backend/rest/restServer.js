@@ -1,4 +1,5 @@
 var express = require('express')
+var bodyParser = require('body-parser');
 var app = null;
 var light = require('../models/light');
 var constants = require('../utils/constants')
@@ -6,9 +7,17 @@ var constants = require('../utils/constants')
 
 function startREST(){
     app =  express();
+
+    // support json encoded bodies
+    app.use(bodyParser.json()); 
+    // support encoded bodies
+    app.use(bodyParser.urlencoded({ extended: true })); 
+
     app.listen(3000, function () {
         console.log('Example app listening on port 3000!')
     })
+
+
 
     //get all lights
     app.get('/light/all', function(req, res){
@@ -31,7 +40,8 @@ function startREST(){
 
     //add light
     app.post('/light/add', function(req, res){
-
+            var user_id = req.body.id;
+            res.send(user_id);
     });
 
     //edit light
