@@ -160,7 +160,6 @@ function editLight(payload, callback) {
         }
         else {
           light.name = lightInfo.name;
-          light.id = lightInfo.id;
           light.location = lightInfo.location;
           light.state = lightInfo.state;
           light.save(callback);
