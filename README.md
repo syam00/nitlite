@@ -1,5 +1,6 @@
-# nitlite
-LED light controlled using nodemcu 
+
+![](./logo/nitlite_logo.png)
+
 
 ## Introduction
 
