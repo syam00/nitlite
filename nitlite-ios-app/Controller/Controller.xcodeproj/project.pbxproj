@@ -13,6 +13,7 @@
 		68424F021EF4337200CD7EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68424F011EF4337200CD7EAF /* Assets.xcassets */; };
 		68424F051EF4337200CD7EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68424F031EF4337200CD7EAF /* LaunchScreen.storyboard */; };
 		68424F101EF4337200CD7EAF /* ControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68424F0F1EF4337200CD7EAF /* ControllerTests.swift */; };
+		68424F1B1EF446F400CD7EAF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68424F1A1EF446F400CD7EAF /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		68424F0B1EF4337200CD7EAF /* ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68424F0F1EF4337200CD7EAF /* ControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerTests.swift; sourceTree = "<group>"; };
 		68424F111EF4337200CD7EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68424F1A1EF446F400CD7EAF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				68424EFA1EF4337200CD7EAF /* AppDelegate.swift */,
 				68424EFC1EF4337200CD7EAF /* ViewController.swift */,
+				68424F1A1EF446F400CD7EAF /* HomeViewController.swift */,
 				68424EFE1EF4337200CD7EAF /* Main.storyboard */,
 				68424F011EF4337200CD7EAF /* Assets.xcassets */,
 				68424F031EF4337200CD7EAF /* LaunchScreen.storyboard */,
@@ -203,6 +206,7 @@
 			files = (
 				68424EFD1EF4337200CD7EAF /* ViewController.swift in Sources */,
 				68424EFB1EF4337200CD7EAF /* AppDelegate.swift in Sources */,
+				68424F1B1EF446F400CD7EAF /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
