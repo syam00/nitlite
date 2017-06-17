@@ -40,6 +40,19 @@ mqttClient:lwt("/lwt", "offline", 0, 0)
 mqttClientm:on("connect", function(client) print ("connected") end)
 mqttClient:on("offline", function(client) print ("offline") end)
 
--- start the mqtt client
-
 -- listen for events
+mqttClient:on("message", function(client, topic, data)
+    print(topic .. ":" )
+    if data ~= nil then
+        print(data)
+    end
+end)
+
+-- start the mqtt client
+mqttClient:connect("", 1883, 0, function(client)
+    print("connected")
+    client:subscribe("/topic", 0, function(client)
+        print("subscribed successfully")    
+    end)
+end)
+
