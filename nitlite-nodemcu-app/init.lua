@@ -1,7 +1,7 @@
 -- set the gpio mode for the desired pin
-switch = 4
-gpio.mode(switch, gpio.OUTPUT)
-gpio.write(switch, gpio.LOW)
+lightPin = 4
+gpio.mode(lightPin, gpio.OUTPUT)
+gpio.write(lightPin, gpio.LOW)
 
 -- declare wifi ssid and password
 ssid = "Shalz"
