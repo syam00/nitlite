@@ -1,0 +1,56 @@
+{
+    "lights": [
+        {
+            "_id": "598ff77f820a064a5aca0e92",
+            "created_at": "2017-08-13T06:53:51.936Z",
+            "updated_at": "2017-08-13T06:59:19.332Z",
+            "name": "quemoy road room 3rd floor",
+            "id": "cebbf6e0-cab3-4e90-81fc-a0d83997c1f7",
+            "device_id": "my_bedroom_light_1",
+            "state": 0,
+            "active": 1,
+            "__v": 0,
+            "location": "my room test light AV"
+        },
+        {
+            "_id": "599553423647736499fcac72",
+            "created_at": "2017-08-17T08:26:42.108Z",
+            "updated_at": "2017-08-17T08:44:33.008Z",
+            "active": 0,
+            "device_id": "my_test_light_a1",
+            "id": "aa447256-c6c8-4ad4-afc5-848c2e259276",
+            "location": "my room test light AV",
+            "name": "test light AV1",
+            "state": 1,
+            "__v": 0
+        }
+    ],
+    "users": [
+        {
+            "name": "John Appleseed",
+            "username": "jhSeed00",
+            "password": "!7667JHHnkT@",
+            "admin": false,
+            "location": "3rd Floor",
+            "meta": {
+                "age": 50,
+                "website": "https://user.admin.com"
+            },
+            "created_at": "2017-08-17T08:26:42.108Z",
+            "updated_at": "2017-08-17T08:44:33.008Z"
+        },
+        {
+            "name": "Arnold Russel",
+            "username": "arRussel",
+            "password": "8790$ghKL",
+            "admin": false,
+            "location": "2nd Floor",
+            "meta": {
+                "age": 40,
+                "website": "https://arnold.russel.com"
+            },
+            "created_at": "2017-08-17T08:26:42.108Z",
+            "updated_at": "2017-08-17T08:44:33.008Z"
+        }
+    ]
+}
