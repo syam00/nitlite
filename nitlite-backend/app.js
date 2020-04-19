@@ -3,12 +3,12 @@ var mqttBroker = require('./mqtt/mqttServer')
 var restHandler = require('./rest/restServer')
 
 //connect to db
-dataManager.connectDB();
+dataManager.connectDB('mongodb://localhost:27017/nitlite');
 
 //start mqtt server
 mqttBroker.startMQTT();
 
 //start the rest server
-restHandler.startREST();
+restHandler.startREST(mqttBroker);
 
 

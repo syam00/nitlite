@@ -10,6 +10,7 @@ var lightSchema = new Schema({
   id: String,
   location: String,
   state: Number,
+  active: Number,
   created_at: Date,
   updated_at: Date
 });
