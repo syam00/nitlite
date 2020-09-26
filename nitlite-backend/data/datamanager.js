@@ -7,7 +7,7 @@ function connectDB(url) {
   try {
 
     mongoose.Promise = global.Promise;
-    mongoose.connect(url)
+    mongoose.connect(url, {useNewUrlParser : true, useUnifiedTopology : true})
   }
   catch(error) {
     confirm.log('error while connecting to mongo', error);
